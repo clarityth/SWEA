@@ -1,6 +1,6 @@
 import sys
 
-sys.stdin = open("sample_input (1).txt")
+sys.stdin = open("../Implementation/sample_input (1).txt")
 T = int(input())
 
 for test_case in range(1, T+1):
@@ -10,7 +10,7 @@ for test_case in range(1, T+1):
     rotated_nums = set()
     for i in range(N//4):
         rotate_str = (input_str[-i:]+input_str[:-i])
-        for j in range(0, len(rotate_str), N // 4):
+        for j in range(0, len(rotate_str), N//4):
             rotated_nums.add(rotate_str[j : j+N//4])
 
     sorted_rotated_nums = []
